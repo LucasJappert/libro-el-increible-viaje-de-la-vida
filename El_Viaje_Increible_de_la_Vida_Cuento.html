@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <!-- <meta name="viewport" content="width=600, initial-scale=1.0"> -->
+
+    <title>El Viaje Increíble de la Vida</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', serif;
+            line-height: 20px;
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+            text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px #000, 0 0 5px #000;
+            padding: 5px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            line-height: 1.5rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        .book {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+        }
+        .page {
+            height: 600px;
+            /* max-height: 600px; */
+            aspect-ratio: 10/10;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            overflow-y: auto;
+            color: #fff;
+        }
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+            border-radius: 10px;
+            z-index: 1;
+        }
+        .page-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .page h1, .page h2 {
+            text-align: center;
+            color: #f0f0f0;
+        }
+        .page p {
+            text-align: justify;
+            margin: 10px 0;
+            white-space: pre-line;
+        }
+        .page-number {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 14px;
+            color: #ccc;
+            z-index: 2;
+        }
+        .position-bottom {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="book">
+        <div class="page" style="background-image: url('./assets/0.png');">
+            <div class="page-content">
+                <h1>🌟 El Increíble Viaje de la Vida 🚀</h1>
+
+                <div class="position-bottom">
+                    El abuelo Ramón estaba sentado junto a la chimenea 🔥, mientras su bisnieto Diego lo miraba con curiosidad.
+                    <div>
+                        - 'Abuelo, ¿puedes contarme una historia?', preguntó Diego.
+                    </div>
+                    <div>
+                        - 'Claro que sí, pequeño,' dijo Ramón sonriendo. '¿Te gustaría saber cómo empezó la vida en nuestro planeta?'
+                    </div>
+                </div>
+            </div>
+            <div class="page-number">1</div>
+        </div>
+
+        <div class="page" style="background-image: url('./assets/11.png');">
+            <div class="page-content">
+                <h2>🌍 La Tierra Primitiva 🌋</h2>
+                <div>
+                    - '¡Sí!' exclamó Diego emocionado.
+                </div>
+                <div>
+                    - 'Bueno,' comenzó el abuelo, 'hace muchísimo tiempo, hace más de 4,500 millones de años, la Tierra no se parecía en nada a lo que conocemos hoy. No había animales, plantas, ni siquiera aire para respirar. Todo era lava y volcanes 🌋.'
+                </div>
+            </div>
+            <div class="page-number">2</div>
+        </div>
+        
+        <div class="page" style="background-image: url('./assets/2.png');">
+            <div class="page-content">
+                <h2>Los primeros océanos</h2>
+                <p>- '¿Y entonces qué pasó?' preguntó Diego con los ojos abiertos.
+
+- 'Con el tiempo, la Tierra se fue enfriando y aparecieron los océanos 🌊. Fue en esos mares donde surgieron las primeras formas de vida: unas bacterias pequeñísimas que no podías ver ni con una lupa.'</p>
+            </div>
+            <div class="page-number">3</div>
+        </div>
+
+        <div class="page" style="background-image: url('./assets/33.png');">
+            <div class="page-content">
+                <h2>Las primeras bacterias</h2>
+                <p>- 'Estas bacterias hicieron algo increíble: ¡crearon oxígeno! 🌱 Poco a poco, llenaron el aire de este gas y permitieron que otros seres vivos pudieran existir.'</p>
+            </div>
+            <div class="page-number">4</div>
+        </div>
+
+        <div class="page" style="background-image: url('./assets/55.png');">
+            <div class="page-content">
+                <h2>El periodo Cámbrico</h2>
+                <p>- 'Pasaron millones de años,' continuó Ramón. 'Primero aparecieron animales simples en el agua, como esponjas y medusas. Luego, en una época llamada el Cámbrico, surgieron animales con conchas y patas.'</p>
+            </div>
+            <div class="page-number">5</div>
+        </div>
+
+        <div class="page" style="background-image: url('./assets/666.png');">
+            <div class="page-content">
+                <h2>La era de los dinosaurios</h2>
+                <p>- 'Más tarde, mucho después, llegaron los dinosaurios 🦖. Era un mundo lleno de gigantes. Había dinosaurios que volaban, como los pterosaurios, y otros que nadaban en los mares, como los ictiosaurios.'</p>
+            </div>
+            <div class="page-number">6</div>
+        </div>
+
+        <div class="page" style="background-image: url('./assets/77.png');">
+            <div class="page-content">
+                <h2>El impacto del asteroide</h2>
+                <p>- '¿Y qué les pasó a los dinosaurios?' preguntó Diego.
+
+- 'Bueno,' dijo Ramón con un toque de tristeza, 'hace 66 millones de años, un gran asteroide chocó contra la Tierra. La explosión llenó el cielo de polvo, y muchos animales, incluidos los dinosaurios, no pudieron sobrevivir.'</p>
+            </div>
+            <div class="page-number">7</div>
+        </div>
+        <div class="page" style="background-image: url('./assets/88.png');">
+            <div class="page-content">
+                <h2>La aparición de los mamíferos</h2>
+                <p>- 'Pero eso no fue el final. Los mamíferos, como los primeros monos y elefantes, comenzaron a crecer y poblar la Tierra 🦣.'</p>
+            </div>
+            <div class="page-number">8</div>
+        </div>
+        <div class="page" style="background-image: url('./assets/111.png');">
+            <div class="page-content">
+                <h2>El abuelo y Diego</h2>
+                <p>- 'Todo lo que ves hoy, desde los árboles hasta las aves, e incluso nosotros, es parte de esa gran historia.'
+
+Con eso, Diego cerró los ojos, soñando con dinosaurios, océanos antiguos y los primeros humanos. 🌟</p>
+            </div>
+            <div class="page-number">9</div>
+        </div>
+    </div>
+</body>
+</html>
